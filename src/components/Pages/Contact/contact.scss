@@ -1,0 +1,267 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+// Media query for Desktop
+@media screen and (min-width: 992px) {
+  .Contact {
+    @include full;
+    @include root;
+    background: url("../../../images/panther-dark.png") right / cover no-repeat;
+    background-color: #151515;
+    background-attachment: fixed;
+    font-family: $font;
+  }
+  .nav {
+    @include size(100%, 10%);
+    padding-top: 2rem;
+    position: relative;
+    animation: slit-in-vertical 0.47s ease-out both 1s;
+    .ul {
+      @include useFlex(row, flex-end, center);
+      @include size(100%, 100%);
+      display: flex;
+
+      .li {
+        margin-right: 3rem;
+        list-style-type: none;
+        .btn {
+          @include font(1.4rem, $gold, 0.3rem);
+          text-decoration: none;
+          background: #151515;
+          box-shadow: 0 0 5px var(--primary-color),
+            0 0 10px var(--primary-color), 0 0 20px var(--primary-color),
+            0 0 40px var(--primary-color);
+          transition-delay: 1s;
+          border-radius: 0.7rem;
+        }
+      }
+    }
+  }
+  // Contact Page's Navigation
+  .first {
+    position: absolute;
+    top: 3rem;
+    right: -5rem;
+  }
+  .first a {
+    height: 0.5rem;
+    place-content: center;
+    display: grid;
+  }
+  .second a {
+    height: 0.5rem;
+    place-content: center;
+    display: grid;
+  }
+  .second {
+    position: absolute;
+    top: 10rem;
+    right: -4rem;
+    height: 0.5rem;
+  }
+  .third a {
+    position: absolute;
+    top: 46rem;
+    right: -4rem;
+    color: $gold;
+    width: 24rem;
+    height: 0.3rem;
+    font-size: 1rem;
+    text-align: center;
+    place-content: center;
+    display: grid;
+    animation: vibrate-1 1s linear infinite;
+  }
+  @mixin display {
+    display: block;
+  }
+  form,
+  input,
+  label,
+  textarea,
+  input[type="button"] {
+    @include display;
+  }
+  form {
+    @include font(1rem, $gray, 0.3rem);
+    @include size(21rem, 38rem);
+
+    border: 0.2rem solid $gold;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem $gold, 0 0 1rem $gold, 0 0 0.2rem $gold,
+      0 0 0.5rem $gold;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-40%, -50%);
+
+    padding: 4rem 3rem;
+    background-color: $dark;
+    // animation: slit-in-vertical 0.47s ease-out both 1s;
+    .touch {
+      @include font(1.3rem, $gray, 0.4rem);
+      text-align: center;
+      margin-bottom: 7rem;
+    }
+    .touch,
+    input,
+    label:hover {
+      color: $gold;
+    }
+    input {
+      padding: 0.6rem;
+      width: 100%;
+      color: $white;
+      background-color: transparent;
+      outline: none;
+    }
+    label {
+      @include font(1.3rem, $gray, 0.4rem);
+    }
+    .form-input {
+      border-bottom: 2px solid $gold;
+      margin: 2rem 0 3rem;
+      width: 100%;
+      position: relative;
+    }
+    .form-input > input:placeholder-shown + label {
+      transform: translate(23px);
+      opacity: 0;
+    }
+  }
+  input[type="text"],
+  input[type="name"] {
+    border: 0;
+  }
+  textarea {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+  }
+  input::placeholder {
+    @include font(1.2rem, $gray, 0.4rem);
+  }
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  input[type="button"] {
+    width: 100%;
+    border: 2px solid $gold;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+  }
+  button {
+    @include font(1.3rem, $gray, 0.4rem);
+    padding: 8px 20px;
+    background: linear-gradient(120deg, $gold, $yellow, $gray);
+    margin-top: 7rem;
+    border-radius: 0.9rem;
+    position: relative;
+    left: 25%;
+    animation: vibrate-1 1s linear infinite;
+  }
+  // Animation
+  @keyframes slit-in-vertical {
+    0% {
+      transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+    }
+    54% {
+      transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateZ(0) rotateY(0);
+    }
+  }
+}
+//**********  Media query for Tablets and Mobiles  ************
+@media only screen and (max-width: 992px) and (min-width: 48px) {
+  .Contact {
+    @include full;
+    @include root;
+    background-color: #151515;
+    background-attachment: fixed;
+    font-family: $font;
+  }
+  .nav {
+    @include size(100%, 10%);
+    // padding: 2rem;
+    .ul {
+      @include useFlex(column, flex-end, end);
+      padding: 2rem;
+      .li {
+        margin: 1rem;
+        list-style-type: none;
+        .btn {
+          @include font(1rem, $gold, 0.2rem);
+          text-decoration: none;
+          background: #151515;
+          border-radius: 0.7rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+  form {
+    @include font(1rem, $gray, 0.3rem);
+    @include size(10rem, 20rem);
+    border: 0.1rem solid $gold;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5rem $gold, 0 0 1rem $gold, 0 0 0.2rem $gold,
+      0 0 0.5rem $gold;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-40%, -50%);
+    padding: 3rem 3rem;
+    background-color: $dark;
+  }
+  .touch {
+    @include font(1rem, $white, 0.2rem);
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  input {
+    padding: 0.2rem;
+    width: 100%;
+    color: $white;
+    background-color: transparent;
+    outline: none;
+  }
+  label {
+    @include font(0.8rem, $white, 0.1rem);
+  }
+  .form-input {
+    margin: 1rem 0 3rem;
+    width: 100%;
+    position: relative;
+  }
+  input[type="text"],
+  input[type="name"] {
+    border: 0;
+  }
+  textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  input::placeholder {
+    @include font(1rem, $gray, 0.2rem);
+  }
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  button {
+    @include font(1rem, $gray, 0.2rem);
+    padding: 5px 10px;
+    background: linear-gradient(120deg, $gold, $yellow, $gray);
+    border-radius: 0.9rem;
+    position: relative;
+    left: 25%;
+    bottom: 10%;
+  }
+}

@@ -1,0 +1,117 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+// ****** Media query for Desktop *******
+@media screen and (min-width: 992px) {
+  .body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../../images/bg.png") center / cover no-repeat;
+    background-color: $dark;
+    background-attachment: fixed;
+    @include full;
+    @include root;
+  }
+  // Header Texts
+  .homeText_1,
+  .homeText_2 {
+    @include font(2.8rem, $gray, 0.3rem);
+    position: fixed;
+    left: 10%;
+    font-family: $font;
+  }
+  .homeText_1 {
+    bottom: 40%;
+  }
+  .homeText_2 {
+    bottom: 30%;
+  }
+  .homeText_1:hover {
+    color: $white;
+  }
+  .homeText_2:hover {
+    color: $white;
+  }
+  // End Text div
+  .endText {
+    position: fixed;
+    bottom: 0;
+  }
+  // Contact button
+  .fixed-contact {
+    @include font(1rem, $gray, 0.2rem);
+    text-decoration: none;
+    position: fixed;
+    bottom: 12%;
+    left: 0;
+    border: 2px solid $gray;
+    border-radius: 3rem;
+    padding: 0.8rem;
+    animation: vibrate-1 0.3s linear infinite both;
+    margin-top: 4rem;
+  }
+  .fixed-contact:hover {
+    box-shadow: 2px 2px 8px $gold;
+    background: linear-gradient(120deg, $yellow, $gold, $yellow, $gray);
+  }
+  // Fixed  Texts on the corners
+  @mixin fixed {
+    @include font(0.8rem, $white, 0.3rem);
+    background-color: $dark;
+    position: fixed;
+  }
+  .fixed-top {
+    @include fixed;
+    top: 16%;
+    left: 0;
+    transform: translateX(-43%) rotate(-90deg);
+  }
+  .fixed-bottom {
+    @include fixed;
+    bottom: 28%;
+    right: 0;
+    transform: translateX(45%) rotate(-90deg);
+  }
+}
+
+// ********** Media query for Tablets and Mobiles ***********
+@media only screen and (max-width: 992px) and (min-width: 48px) {
+  .homeText_1,
+  .homeText_2 {
+    @include font(1.2rem, $white, 0.1rem);
+    position: fixed;
+    left: 10%;
+    font-family: $font;
+  }
+  .homeText_1 {
+    bottom: 40%;
+  }
+  .homeText_2 {
+    bottom: 30%;
+  }
+  // End Text div
+  .endText {
+    display: none;
+  }
+  .body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../../images/bg.png") center / cover no-repeat;
+    background-color: $dark;
+    background-attachment: fixed;
+    @include full;
+    @include root;
+  }
+  .fixed-contact {
+    display: none;
+  }
+  // Fixed  Texts on the corners
+  @mixin fixed {
+    @include font(0.8rem, $white, 0.3rem);
+    background-color: $dark;
+    position: fixed;
+  }
+  .fixed-top {
+    display: none;
+  }
+  .fixed-bottom {
+    display: none;
+  }
+}
