@@ -127,37 +127,29 @@ button {
     }
   }
   form {
-    @include font(0.5rem, $gray, 0.3rem);
-    background-color: $dark;
-  }
- 
+    @include font(0.5rem, $gray, 0.3rem);  }
+ .touch {
+  font-size: 0.4rem;
+ }
   input {
     padding: 0.2rem;
-    width: 100%;
+    width: 50%;
     color: $white;
     background-color: transparent;
     outline: none;
   }
-
+  .message {
+    font-size: 0.3rem;
+  }
   .form-input {
     margin: 1rem 0 3rem;
-    width: 100%;
+    width: 50%;
     position: relative;
   }
 
-  input[type="text"],
-  input[type="name"] {
-    border: 0;
-  }
-  textarea {
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: transparent;
-  
-  }
+
   input::placeholder {
-    @include font(0.8rem, $gray, 0.2rem);
+    @include font(0.4rem, $gray, 0.2rem);
   }
   input:focus {
     border: none;

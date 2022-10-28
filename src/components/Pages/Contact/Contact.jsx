@@ -39,7 +39,7 @@ const Contact = () => {
             />
           </div>
           <div className="form-input">
-            <label for="text">LIVE ME A MESSAGE</label>
+            <label className="message" for="text">LIVE ME A MESSAGE</label>
             <textarea
               value={userMessage.message}
               name="message"
