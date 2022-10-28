@@ -16,8 +16,6 @@ const Home = () => {
       <Link className="fixed-contact" to="../Contact">
         contact{" "}
       </Link>
-      <p className="fixed-top">full stack web developer</p>
-      <p className="fixed-bottom">full stack web developer</p>
       <div className="endText">
         <EndText />
       </div>

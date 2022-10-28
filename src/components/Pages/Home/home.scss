@@ -58,20 +58,8 @@
     background-color: $dark;
     position: fixed;
   }
-  .fixed-top {
-    @include fixed;
-    top: 16%;
-    left: 0;
-    transform: translateX(-43%) rotate(-90deg);
-  }
-  .fixed-bottom {
-    @include fixed;
-    bottom: 28%;
-    right: 0;
-    transform: translateX(45%) rotate(-90deg);
-  }
-}
 
+}
 // ********** Media query for Tablets and Mobiles ***********
 @media only screen and (max-width: 992px) and (min-width: 48px) {
   .homeText_1,

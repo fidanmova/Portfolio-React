@@ -83,7 +83,7 @@
   }
   form {
     @include font(1rem, $gray, 0.3rem);
-    @include size(21rem, 38rem);
+    @include size(12%,25%);
 
     border: 0.2rem solid $gold;
     border-radius: 2rem;
