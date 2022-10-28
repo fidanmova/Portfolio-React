@@ -1,30 +1,27 @@
 @mixin useFlex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-  }
-  @mixin full {
-    width: 100%;
-    min-height: 100vh;
-  }
-  @mixin root {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-     text-transform: uppercase;
-    font-size: 62.5%;
-  
-   
-  
-  }
-  @mixin size($width, $height) {
-    width: $width;
-    height: $height;
-  }
-  @mixin font($size, $color, $letter) {
-    font-size: $size;
-    color: $color;
-    letter-spacing: $letter;
-  }
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin full {
+  width: 100%;
+  min-height: 100vh;
+}
+@mixin root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 62.5%;
+}
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin font($size, $color, $letter) {
+  font-size: $size;
+  color: $color;
+  letter-spacing: $letter;
+}
