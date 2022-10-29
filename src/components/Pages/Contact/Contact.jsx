@@ -25,7 +25,7 @@ const Contact = () => {
           <FontAwesomeIcon
                 icon="fa-brands fa-github"
                 size="2x"
-                className="i"
+                className="iContact"
               />
           </a>
           {" "}
@@ -36,7 +36,7 @@ const Contact = () => {
           <FontAwesomeIcon
                 icon="fa-brands fa-linkedin"
                 size="2x"
-                className="i"
+                className="iContact"
               />
           </a>
           </h1>
