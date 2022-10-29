@@ -3,11 +3,8 @@ import emailjs from "@emailjs/browser";
 
 const Context = React.createContext();
 
-// Projects toggled
-
 export function ContextProvider(props) {
   const [active, setActive] = useState(false);
-
   const toggleProjects = () => {
     setActive(!active);
   };
@@ -20,9 +17,9 @@ export function ContextProvider(props) {
   });
 
   const [allMessages, setAllMessages] = useState([]);
-  // This is for Success message
+  //  for Success message
   const [submit, setSubmit] = useState(false);
-  // This is for Submit message appears only if the Form is valid
+  //  for Submit message appears only if the Form is valid
   const [valid, setValid] = useState(false);
   // const [formErrors, setFormErrors] = useState({});
 
@@ -67,10 +64,7 @@ export function ContextProvider(props) {
         setAllMessages,
         submit,
         setSubmit,
-
         handleSubmit,
-        // validate,
-
         valid,
         setValid,
       }}

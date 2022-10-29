@@ -1,35 +1,28 @@
-
 ///////////////////////// End Text Moving Animation
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
-
-
-
-@media screen and (min-width:960px){
-.end {
-  margin: 0;
-  width: 500%;
-  border-top: 2px soli $gray;
-  border-bottom: 2px soli $gray;
-  background-color: $gray;
-  opacity: 0.4;
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
-  letter-spacing: 0.6;
-}
-
-
-.end p {
-  animation: text 30s linear infinite;
-  color: $gold;
-  text-shadow: 0 0 6px $gray;
-}
-
-    @keyframes text {
-      to {
-        transform: translateX(-25%);
-      }
+@media screen and (min-width: 960px) {
+  .end {
+    margin: 0;
+    width: 500%;
+    border-top: 2px soli $gray;
+    border-bottom: 2px soli $gray;
+    background-color: $gray;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    letter-spacing: 0.6;
+  }
+  .end p {
+    animation: text 30s linear infinite;
+    color: $gold;
+    text-shadow: 0 0 6px $gray;
+  }
+  @keyframes text {
+    to {
+      transform: translateX(-25%);
     }
+  }
 }

@@ -6,12 +6,11 @@ import "./home.scss";
 import "./animation.scss"; 
 
 
-
 const Home = () => {
   return (
     <div className="body">
       <Navbar />
-      <p className="homeText_1"> Fidan Mova</p>
+      <p className="homeText_1"> Fidan Maharramova</p>
       <p className="homeText_2">Full Stack Web Developer</p>
       <Link className="fixed-contact" to="../Contact">
         contact{" "}
@@ -22,5 +21,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;

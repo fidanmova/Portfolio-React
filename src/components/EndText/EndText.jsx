@@ -1,7 +1,5 @@
-
 import React from 'react'
 import "./endText.scss"
-
 
 export default function EndText() {
   return (

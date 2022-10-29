@@ -5,16 +5,13 @@
 @media screen and (min-width: 992px) {
   nav {
     @include size(100%, 10%);
-
     ul {
       @include useFlex(row, flex-end, center);
       display: flex;
       @include size(100%, 100%);
-
       li {
         margin-right: 3rem;
         list-style-type: none;
-
         .btn {
           @include font(1.6rem, $gray, 0.3rem);
           text-decoration: none;
@@ -25,18 +22,17 @@
   }
 }
 // ********** Media query for Tablets and Mobiles ***********
-@media only screen and (max-width: 992px) and (min-width: 48px) 
-{
+@media only screen and (max-width: 992px) and (min-width: 48px) {
   nav {
     @include size(100%, 10%);
-    padding: 2%; 
+    padding: 2%;
     ul {
       @include useFlex(column, flex-end, end);
       li {
         margin: 1rem;
         list-style-type: none;
         .btn {
-          @include font(1rem, $gold, 0.2rem);
+          @include font(0.7rem, $gold, 0.2rem);
           font-family: $font;
           text-decoration: none;
           background: #151515;
@@ -47,4 +43,3 @@
     }
   }
 }
-

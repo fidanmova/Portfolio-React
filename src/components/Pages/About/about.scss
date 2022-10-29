@@ -77,7 +77,6 @@
 .Skills {
   @include size(100%, 20em);
   text-transform: uppercase;
-  // background-color: $dark;
   @include font(1.5rem, $gray, 0.3rem);
   margin-top: 10rem;
 }
@@ -131,9 +130,9 @@
 @media only screen and (max-width: 992px) and (min-width: 48px) {
   .About {
     background-color: $dark;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../../images/bg.png") center / cover no-repeat;
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
     @include root;
     @include useFlex(column, flex-end, center);
     display: flex;

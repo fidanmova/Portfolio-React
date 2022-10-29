@@ -1,8 +1,14 @@
 import React from "react";
 import "./contact.scss";
-import { useRef, useContext } from "react";
+import { useContext } from "react";
 import Context from "../../../store/context";
 import Navbar from "../../Navbar/Navbar";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fab, fas);
 
 const Contact = () => {
   const { sendEmail, handleSubmit, userMessage } = useContext(Context);
@@ -10,7 +16,32 @@ const Contact = () => {
     <div className="Contact">
       <Navbar/>
       <form onSubmit={sendEmail}>
-          <h1 className="touch">get in touch</h1>
+        <div className="contactMe">
+          <h1 className="touch">get in touch 
+          {" "}
+          {" "}
+          {" "}
+          <a href="https://github.com/fidanmova">
+          <FontAwesomeIcon
+                icon="fa-brands fa-github"
+                size="2x"
+                className="i"
+              />
+          </a>
+          {" "}
+          {" "}
+          {" "}
+          {" "}
+          <a href="https://www.linkedin.com/in/fidan-mova/">
+          <FontAwesomeIcon
+                icon="fa-brands fa-linkedin"
+                size="2x"
+                className="i"
+              />
+          </a>
+          </h1>
+
+        </div>
            <div className="form-input">
             <label for="name" aria-label="name">
               {" "}

@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./navbar.scss"
-
+import "./navbar.scss";
 
 export default function Navbar() {
   return (
-
     <nav>
       <ul>
         <li>
@@ -41,7 +39,5 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
-
-   
   );
 }
