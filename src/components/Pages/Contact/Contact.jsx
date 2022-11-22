@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
 import "./contact.scss";
 import { useContext } from "react";
 import Context from "../../../store/context";
@@ -14,74 +15,73 @@ const Contact = () => {
   const { sendEmail, handleSubmit, userMessage } = useContext(Context);
   return (
     <div className="Contact">
-      <Navbar/>
+      <Navbar />
       <form onSubmit={sendEmail}>
         <div className="contactMe">
-          <h1 className="touch">get in touch 
-          {" "}
-          {" "}
-          {" "}
-          <a href="https://github.com/fidanmova">
-          <FontAwesomeIcon
+          <h1 className="touch">
+            get in touch{" "}
+            <a href="https://github.com/fidanmova">
+              <FontAwesomeIcon
                 icon="fa-brands fa-github"
                 size="2x"
                 className="iContact"
               />
-          </a>
-          {" "}
-          {" "}
-          {" "}
-          {" "}
-          <a href="https://www.linkedin.com/in/fidan-mova/">
-          <FontAwesomeIcon
+            </a>{" "}
+            <a href="https://www.linkedin.com/in/fidandev">
+              <FontAwesomeIcon
                 icon="fa-brands fa-linkedin"
                 size="2x"
                 className="iContact"
               />
-          </a>
+            </a>
+            <div></div>
           </h1>
-
-        </div>
-           <div className="form-input">
-            <label for="name" aria-label="name">
-              {" "}
-            </label>
-            <input
-              type="name"
-              name="name"
-              value={userMessage.name}
-              placeholder="YOUR NAME..."
-              onChange={handleSubmit}
-              required
-            />
-          </div> 
-          <div className="form-input">
-            <label for="email" aria-label="email">
-              {" "}
-            </label>
-            <input
-              value={userMessage.email}
-              type="text"
-              name="email"
-              placeholder="YOUR EMAIL..."
-              autocomplete="off"
-              onChange={handleSubmit}
-              required
-            />
+          <div className="email">
+            <AiOutlineMail /> <span>fidanmova@gmail.com</span>
           </div>
-          <div className="form-input">
-            <label className="message" for="text">LIVE ME A MESSAGE</label>
-            <textarea
-              value={userMessage.message}
-              name="message"
-              cols="95"
-              rows="4"
-              onChange={handleSubmit}
-            ></textarea>
-          </div> 
-          <button type="submit">submit </button>
-        </form>
-      </div>
+        </div>
+        <div className="form-input">
+          <label for="name" aria-label="name">
+            {" "}
+          </label>
+          <input
+            type="name"
+            name="name"
+            value={userMessage.name}
+            placeholder="YOUR NAME..."
+            onChange={handleSubmit}
+            required
+          />
+        </div>
+        <div className="form-input">
+          <label for="email" aria-label="email">
+            {" "}
+          </label>
+          <input
+            value={userMessage.email}
+            type="text"
+            name="email"
+            placeholder="YOUR EMAIL..."
+            autocomplete="off"
+            onChange={handleSubmit}
+            required
+          />
+        </div>
+        <div className="form-input">
+          <label className="message" for="text">
+            LIVE ME A MESSAGE
+          </label>
+          <textarea
+            value={userMessage.message}
+            name="message"
+            cols="95"
+            rows="4"
+            onChange={handleSubmit}
+          ></textarea>
+        </div>
+        <button type="submit">submit </button>
+      </form>
+    </div>
   );
 };
 export default Contact;

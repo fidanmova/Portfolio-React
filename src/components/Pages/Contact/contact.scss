@@ -24,11 +24,11 @@ input[type="button"] {
 }
 form {
   @include font(1rem, $gray, 0.3rem);
-  margin-top: 10rem;
+  margin-top: 6rem;
   margin-left: 3rem;
   .touch {
     @include font(1.3rem, $gray, 0.4rem);
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
   .touch:hover {
     color: $white;
@@ -96,8 +96,12 @@ button {
   left: 20%;
   animation: vibrate-1 1s linear infinite;
 }
-.iContact{
-  color:$gold;
+.iContact {
+  color: $gold;
+}
+.email {
+  text-transform: lowercase;
+  color: $gold;
 }
 //**********  Media query for Tablets and Mobiles  ************
 @media only screen and (max-width: 992px) and (min-width: 48px) {
@@ -108,11 +112,11 @@ button {
     background-attachment: fixed;
     @include full;
     @include root;
-    font-family: $font
+    font-family: $font;
   }
- .touch {
-  display: none;
- }
+  .touch {
+    display: none;
+  }
   .message {
     @include font(0.6rem, $gray, 0.2rem);
     font-family: $font;
@@ -124,7 +128,7 @@ button {
   }
   input::placeholder {
     @include font(0.7rem, $gray, 0.2rem);
-    font-family: $font
+    font-family: $font;
   }
   input:focus {
     border: none;
@@ -139,5 +143,4 @@ button {
     left: 20%;
     bottom: 10%;
   }
-
 }

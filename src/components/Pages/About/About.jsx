@@ -26,18 +26,29 @@ export default function About() {
       <div className="InfoText">
         <div data-aos="flip-left" className="Info ">
           <p className="about_text">
-            I'm Full Stack Web Developer who newly-graduated a 1 year of
+            I am a Full Stack Web Developer who newly-graduated a 1 year of
             intensive study in Full Stack web development of Digital Career
             Institute.
           </p>
           <p className="about_text">
-            {" "}
-            Seeking a position to apply experience from Web Development.{" "}
+            Staying passionate, motivated and enjoying to explore new
+            technologies and frameworks is one of my strong features.
           </p>
           <p className="about_text">
-            {" "}
-            Excited to explore other technologies and frameworks and improve my
-            knowledge.{" "}
+            Excited to improve my knowledge by seeking out new technologies and
+            staying up-to-date on trends in the industry.
+          </p>
+          <p className="about_text">
+            I am excitedly looking forward to building easy-to-use,
+            user-friendly websites, and applications.
+          </p>
+          <p className="about_text">
+            Communication, working responsibly and working team-oriented are my
+            values.
+          </p>
+          <p className="about_text">
+            Seeking a position to apply my experience and passion in web
+            development for finding creative solutions.
           </p>
         </div>
       </div>
@@ -45,44 +56,104 @@ export default function About() {
       {/* Project section */}
       <section className="projects_wrapper">
         <div className="projects">
-          <div className="item-img img-3"></div>
+          <div className="item-img img-1"></div>
           <div className="description">
-            <img src={Logo} alt="" className="logo-img" />
-            <p className="text-2">MERN Stack Chat App</p>
+            <div>
+              <a
+                className="link"
+                href="https://chat-j1bt.onrender.com/"
+                target="_about"
+              >
+                <img src={Logo} alt="" className="logo-img" />{" "}
+              </a>
+            </div>
+            <p className="text-2">
+              {" "}
+              <a
+                className="link"
+                href="https://chat-j1bt.onrender.com/"
+                target="_about"
+              >
+                {" "}
+                MERN Stack Chat App
+              </a>
+            </p>
             <p className="text-1">
               {" "}
-              MERN Stack Chat App is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.{" "}
+              MERN Stack Chat App is a Full Stack Chatting App. Uses React.js,
+              Socket.io for real time communication, Chakra.UI for styling and
+              stores user details in encrypted format in Mongo DB Database.{" "}
             </p>
-            <p className="text-3">Technologies: React, Chakra UI, Mongo Db, Socket.io, Node JS, Express JS</p>
+            <p className="text-3">
+              Technologies: React, Chakra UI, Mongo Db, Socket.io, Node JS,
+              Express JS, Render
+            </p>
+          </div>
+        </div>
+
+        <div className="projects">
+          <div className="item-img img-2"></div>
+          <div className="description">
+            <a
+              className="link"
+              href="https://devshed.vercel.app/"
+              target="_about"
+            >
+              <img src={Logo} alt="" className="logo-img" />{" "}
+            </a>
+
+            <p className="text-2">
+              {" "}
+              <a
+                className="link"
+                href="https://devshed.vercel.app/"
+                target="_about"
+              >
+                {" "}
+                Dev-Shed Full Stack App{" "}
+              </a>
+            </p>
+            <p className="text-1">
+              {" "}
+              Dev-Shed App is a Full Stack Social App. Uses Next.js as a React
+              framework, Tailwind CSS & daisyUi for rapid styling, and stores
+              user details in encrypted format in Mongo DB Database{" "}
+            </p>
+            <p className="text-3">
+              Technologies: Next.js, Tailwind CSS, daisy ui, Mongo Db, Node js,
+              Vercel, nodemailer, mapbox, cloudinary
+            </p>
           </div>
         </div>
 
         <div className="projects">
           <div className="item-img img-3"></div>
           <div className="description">
-            <img src={Logo} alt="" className="logo-img" />
-            <p className="text-2">Dev-Shed Full Stack App</p>
+            <a
+              className="link"
+              href="https://fidanportfolio.vercel.app/"
+              target="_about"
+            >
+              <img src={Logo} alt="" className="logo-img" />{" "}
+            </a>
+            <p className="text-2">
+              <a
+                className="link"
+                href="https://fidanportfolio.vercel.app/"
+                target="_about"
+              >
+                {" "}
+                My Portfolio Project{" "}
+              </a>
+            </p>
             <p className="text-1">
               {" "}
-              Dev-Shed App is a Full Stack Social App. Uses  Next.js as a React framework, Tailwind UI for rapid styling,  and stores user details in encrypted format in Mongo DB Database {" "}
+              My Portfolio is a frontend project. The Project has been built on
+              front-end JavaScript library React. It uses Sass ( syntactically
+              awesome style sheets) for styling and Email js in order to be able
+              to receive the emails
             </p>
-            <p className="text-3">Technologies: Next.js, Tailwind UI, Mongo Db</p>
-          </div>
-        </div>
-
-        <div className="projects">
-          <div className="item-img img-3"></div>
-          <div className="description">
-            <img src={Logo} alt="" className="logo-img" />
-            <p className="text-2">My Project</p>
-            <p className="text-1">
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-              cupiditate totam quidem! Quasi, debitis atque optio enim
-              architecto aliquam doloribus assumenda sit cupiditate similique
-              quod fuga ut illo, amet facere.{" "}
-            </p>
-            <p className="text-3">Technologies: React, SCSS, HTML5</p>
+            <p className="text-3">Technologies: React, SCSS, HTML5, Email js</p>
           </div>
         </div>
       </section>

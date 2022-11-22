@@ -13,6 +13,7 @@
     @include root;
     @include useFlex(column, flex-end, center);
     display: flex;
+    font-family: "'Lato', sans-serif";
   }
   // InfoText Section
   .Info {
@@ -20,12 +21,15 @@
     margin: 15rem 0 8rem;
     background: linear-gradient(120deg, $gray, $yellow, $gold, $yellow, $gray);
     opacity: 0.6;
+    padding: 2rem;
   }
   .about_text {
     @include font(1.2rem, $gray, 0.1rem);
-    margin: 4rem;
-    padding: 2rem;
-  }
+    text-shadow: 1px 1px 6px white;
+    text-transform:none;
+    margin: 1rem 4rem;
+    padding:0;
+     }
   // Project Section
   .projects_wrapper {
     @include useFlex(row, center, center);
@@ -59,20 +63,26 @@
           url(../../../images/bg.png);
       }
       .img-1:hover {
-        background: url(../../../images/img-1.png) center / cover no-repeat;
+        background: url(../../../images/chat.jpg) center / cover no-repeat;
       }
       .img-2:hover {
-        background: url(../../../images/img-2.png) center / cover no-repeat;
+        background: url(../../../images/devshed.jpg) center / cover no-repeat;
       }
       .img-3:hover {
-        background: url(../../../images/img5.png) center / cover no-repeat;
+        background: url(../../../images/port.jpg ) top / cover no-repeat;
       }
     }
   }
   .description {
     text-align: center;
   }
+  .link {
+    @include font(0.9rem, $gold, 0.3rem);
+    text-decoration: none
+  }
 }
+
+
 /* FOOTER SKILLS*/
 .Skills {
   @include size(100%, 20em);

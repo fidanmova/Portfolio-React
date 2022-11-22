@@ -13,7 +13,7 @@
         margin-right: 3rem;
         list-style-type: none;
         .btn {
-          @include font(1.6rem, $gray, 0.3rem);
+          @include font(1.4rem, $gray, 0.3rem);
           text-decoration: none;
           line-height: 2rem;
         }

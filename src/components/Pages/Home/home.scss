@@ -9,11 +9,12 @@
     background-attachment: fixed;
     @include full;
     @include root;
+ font-family: "'Lato', sans-serif";
   }
   // Header Texts
   .homeText_1,
   .homeText_2 {
-    @include font(2.8rem, $gray, 0.3rem);
+    @include font(2.4rem, $gray, 0.3rem);
     position: fixed;
     left: 10%;
     font-family: $font;
