@@ -3,8 +3,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import "./contact.scss";
 import { useContext } from "react";
 import Context from "../../../store/context";
-import Navbar from "../../Navbar/Navbar";
-import { Link } from "react-router-dom";
+import NavbarDesk from "../../Navbar/NavbarDesk";
+import NavbarMob from "../../Navbar/NavbarMob";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -15,7 +15,8 @@ const Contact = () => {
   const { sendEmail, handleSubmit, userMessage } = useContext(Context);
   return (
     <div className="Contact">
-      <Navbar />
+      <NavbarDesk />
+      <NavbarMob />
       <form onSubmit={sendEmail}>
         <div className="contactMe">
           <h1 className="touch">
@@ -34,7 +35,6 @@ const Contact = () => {
                 className="iContact"
               />
             </a>
-            <div></div>
           </h1>
           <div className="email">
             <AiOutlineMail /> <span>fidanmova@gmail.com</span>

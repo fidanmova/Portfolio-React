@@ -24,10 +24,10 @@ input[type="button"] {
 }
 form {
   @include font(1rem, $gray, 0.3rem);
-  margin-top: 6rem;
+  margin-top: 15em;
   margin-left: 3rem;
   .touch {
-    @include font(1.3rem, $gray, 0.4rem);
+    @include font(1.2rem, $white, 0.4rem);
     margin-bottom: 4rem;
   }
   .touch:hover {
@@ -113,10 +113,12 @@ button {
     @include full;
     @include root;
     font-family: $font;
+    .touch {
+      @include font(0.8rem, $white, 0.4rem);
+      margin-bottom: 2rem;
+    }
   }
-  .touch {
-    display: none;
-  }
+
   .message {
     @include font(0.6rem, $gray, 0.2rem);
     font-family: $font;
@@ -142,5 +144,13 @@ button {
     position: relative;
     left: 20%;
     bottom: 10%;
+  }
+  .email {
+    text-transform: lowercase;
+
+    font-size: 0.7rem;
+  }
+  .touch a {
+    font-size: 0.5rem;
   }
 }

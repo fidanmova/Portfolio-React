@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.scss";
-import Navbar from "../../Navbar/Navbar";
+import NavbarDesk from "../../Navbar/NavbarDesk";
+import NavbarMob from "../../Navbar/NavbarMob";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -18,7 +19,8 @@ export default function About() {
   }, []);
   return (
     <div className="About">
-      <Navbar />
+      <NavbarDesk />
+      <NavbarMob/>
       <Link className="fixed-contact" to="../Contact">
         contact{" "}
       </Link>
@@ -120,7 +122,7 @@ export default function About() {
               user details in encrypted format in Mongo DB Database{" "}
             </p>
             <p className="text-3">
-              Technologies: Next.js, Tailwind CSS, daisy ui, Mongo Db, Node js,
+              Technologies: Next.js, Tailwind CSS, Daisy ui, Mongo Db, Node js,
               Vercel, nodemailer, mapbox, cloudinary
             </p>
           </div>

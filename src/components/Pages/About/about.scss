@@ -19,13 +19,14 @@
   .Info {
     @include size(100%, 20%);
     margin: 15rem 0 8rem;
-    background: linear-gradient(120deg, $gray, $yellow, $gold, $yellow, $gray);
-    opacity: 0.6;
+    background-color: $gray;
+    opacity: 0.4;
     padding: 2rem;
+    border-radius: 5rem
   }
   .about_text {
-    @include font(1.2rem, $gray, 0.1rem);
-    text-shadow: 1px 1px 6px white;
+    @include font(1.4rem, $gold, 0.1rem);
+    text-shadow: 0 0 6px $gray;
     text-transform:none;
     margin: 1rem 4rem;
     padding:0;
