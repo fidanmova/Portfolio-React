@@ -14,7 +14,7 @@ export default function Test() {
   return (
     <div className="antialised   ">
       <div className="flex w-full   justify-center items-center  ">
-        <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6   w-full sm:p-12 max-w-4xl p-8 rounded-2xl shadow-lg text-white  bg-graytwnd/10 md:mt-28">
+        <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6   w-full sm:p-8 max-w-4xl p-8 rounded-2xl shadow-lg text-white  bg-graytwnd/10 md:mt-28">
           <div className="flex flex-col  space-y-8 justify-between">
             <div>
               <h1 className="font-bol md:text-5xl tracking-wide mb-8 capitalize">
@@ -87,11 +87,11 @@ export default function Test() {
                   for="email"
                   aria-label="name"
                 >
-                  {" "}
+            
                   Your Email
                 </label>
                 <input
-                  className="ring-1 ring-goldtwnd w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-4 focus:ring-goldtwnd text-black"
+                  className="ring-1 ring-goldtwnd w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-4 focus:ring-goldtwnd text-black text-base"
                   type="text"
                   name="email"
                   value={userMessage.email}
@@ -105,7 +105,7 @@ export default function Test() {
                   Live me a Message
                 </label>
                 <textarea
-                  className="ring-1 ring-goldtwnd w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-4 focus:ring-goldtwnd text-black "
+                  className="ring-1 ring-goldtwnd w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-4 focus:ring-goldtwnd text-black text-base"
                   type="text"
                   name="message"
                   value={userMessage.message}
@@ -113,7 +113,7 @@ export default function Test() {
                   rows="4"
                 />
               </div>
-              <button className="inline-block self-end text-goldtwnd md:text-2xl rounded-lg px-6 py-2  md:hover:font-bold ">
+              <button className="inline-block md:self-end sm:self-center text-goldtwnd md:text-xl rounded-lg px-6 py-2  md:hover:font-bold ring-1 ring-goldtwnd">
                 Send Message
               </button>
             </form>

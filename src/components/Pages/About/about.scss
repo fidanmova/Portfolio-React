@@ -16,11 +16,12 @@
   // InfoText Section
   .Info {
     margin: 15rem 0 8rem;
-    background-color: $gray;
-    opacity: 0.3;
+    background-color: $dark;
+    opacity: 0.6;
     padding: 2rem;
     border-radius: 5rem;
     width: 100%;
+ 
   }
   .about_text {
     @include font(1.4rem, $gold, 0.1rem);
