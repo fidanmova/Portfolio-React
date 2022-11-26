@@ -7,8 +7,8 @@
     @include font(1.4rem, $gray, 0.3rem);
     margin: 0;
     width: 500%;
-    border-top: 2px soli $gray;
-    border-bottom: 2px soli $gray;
+    border-top: 2px solid $gray;
+    border-bottom: 2px solid $gray;
     background-color: $gray;
     opacity: 0.3;
     display: flex;
@@ -18,7 +18,7 @@
     animation: text 30s linear infinite;
     color: $gold;
     text-shadow: 0 0 6px $gray;
-    padding: 1.8rem;
+    padding: 1rem;
   }
   @keyframes text {
     to {

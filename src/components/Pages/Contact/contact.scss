@@ -3,17 +3,26 @@
 
 // Media query for Desktop
 @media screen and (min-width: 992px) {
-.Contact {
-  background-color: $dark;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../../../images/bg.png") center / cover no-repeat;
-  background-attachment: fixed;
-  font-family: $font;
-  width: 100%;
-  height: 100vh;
-  @include root;
+  .Contact {
+    background-color: $dark;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../../images/bg.png") center / cover no-repeat;
+    background-attachment: fixed;
+    font-family: $font;
+    width: 100%;
+    height: 100vh;
+    @include root;
+  }
+
+  h1:hover {
+    scale: (1.2);
+  }
+
+  .contact-icon:hover {
+    scale: (1.5);
+  }
 }
-}
+
 //**********  Media query for Tablets and Mobiles  ************
 @media only screen and (max-width: 992px) and (min-width: 48px) {
   .Contact {
@@ -21,8 +30,11 @@
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("../../../images/bg.png") center / cover no-repeat;
     background-attachment: fixed;
-    @include root;
+    // @include root;
     width: 100%;
-    height: 100vh;
+  }
+
+  h1 {
+    display: none;
   }
 }

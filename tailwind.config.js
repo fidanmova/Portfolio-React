@@ -9,6 +9,7 @@ module.exports = {
         black: "#151515",
         graytwnd: "#373737",
         yellowtwnd: "#635d5d",
+        whitetwnd: "#fcf9ee",
       },
     },
   },

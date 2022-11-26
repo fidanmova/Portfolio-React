@@ -14,12 +14,12 @@ export default function Test() {
   return (
     <div className="antialised   ">
       <div className="flex w-full   justify-center items-center  ">
-        <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6   w-full sm:p-12 max-w-4xl p-8 rounded-2xl shadow-lg text-white  bg-graytwnd md:mt-28">
+        <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6   w-full sm:p-12 max-w-4xl p-8 rounded-2xl shadow-lg text-white  bg-graytwnd/10 md:mt-28">
           <div className="flex flex-col  space-y-8 justify-between">
             <div>
-              <h1 className="font-bol md:text-4xl tracking-wide mb-8">
+              <h1 className="font-bol md:text-5xl tracking-wide mb-8 capitalize">
                 {" "}
-                get in touch
+                Get in Touch
               </h1>
             </div>
 
@@ -42,23 +42,21 @@ export default function Test() {
               </div>
             </div>
 
-            <div className=" flex space-x-2 md:justify-between text-goldtwnd md:text-4xl ">
+            <div className="flex space-x-2 md:justify-between text-goldtwnd md:text-4xl ">
               <div>
                 <a href="https://www.linkedin.com/in/fidandev">
-                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                  <FontAwesomeIcon icon="fa-brands fa-linkedin " className="contact-icon" />
                 </a>
               </div>
 
               <div>
                 <a href="https://github.com/fidanmova">
-                  <FontAwesomeIcon icon="fa-brands fa-github" />
+                  <FontAwesomeIcon icon="fa-brands fa-github" className="contact-icon" />
                 </a>{" "}
               </div>
             </div>
           </div>
-
           {/* Form section */}
-
           <div className="bg-black rounded-xl shadow-lg p-8">
             <form
               onSubmit={sendEmail}
@@ -67,7 +65,7 @@ export default function Test() {
             >
               <div>
                 <label
-                  className="md:text-lg md:hover:font-bold"
+                  className="md:text-lg text-yellowtwnd  md:hover:font-bold"
                   for="name"
                   aria-label="name"
                 >
@@ -85,7 +83,7 @@ export default function Test() {
               </div>
               <div>
                 <label
-                  className="md:text-lg md:hover:font-bold bg-graytwnd"
+                  className="md:text-lg text-yellowtwnd md:hover:font-bold "
                   for="email"
                   aria-label="name"
                 >
@@ -101,8 +99,8 @@ export default function Test() {
                   required
                 />
               </div>
-              <div>
-                <label className="md:text-lg " for="email" aria-label="name">
+              <div >
+                <label className="md:text-lg text-yellowtwnd " for="email" aria-label="name">
                   {" "}
                   Live me a Message
                 </label>

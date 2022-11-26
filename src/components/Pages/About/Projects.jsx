@@ -16,7 +16,8 @@ export default function Projects() {
         <div>
           <a
             className="link"
-            href="https://chat-j1bt.onrender.com/"
+            href="https://devshed.vercel.app/"
+        
             target="_about"
           >
             <img src={Logo} alt="" className="logo-img" />{" "}
@@ -25,7 +26,7 @@ export default function Projects() {
         <div>
           <a
             className="link"
-            href="https://devshed.vercel.app/"
+            href="https://chat-j1bt.onrender.com/"
             target="_about"
           >
             <img src={Logo} alt="" className="logo-img" />{" "}
@@ -49,28 +50,6 @@ export default function Projects() {
           <p className="text-1">
             <a
               className="link"
-              href="https://chat-j1bt.onrender.com/"
-              target="_about"
-            >
-              Chat App
-            </a>
-          </p>
-          <p className="text-2">
-            Chat App is a Full Stack Chatting App. Uses React.js, Socket.io for
-            real time communication, Chakra.UI for styling and stores user
-            details in encrypted format in Mongo DB Database.{" "}
-          </p>
-          <p className="text-3">
-            Technologies: React, Chakra UI, Mongo Db, Socket.io, Node JS,
-            Express JS, Render
-          </p>
-        </div>
-
-        {/* *********************SECOND ***********/}
-        <div>
-          <p className="text-1">
-            <a
-              className="link"
               href="https://devshed.vercel.app/"
               target="_about"
             >
@@ -85,6 +64,28 @@ export default function Projects() {
           <p className="text-3">
             Technologies: Next.js, Tailwind CSS, Daisy ui, Mongo Db, Node js,
             Vercel, nodemailer, mapbox, cloudinary
+          </p>
+        </div>
+
+        {/* *********************SECOND ***********/}
+        <div>
+          <p className="text-1">
+            <a
+              className="link"
+              href="https://chat-j1bt.onrender.com/"
+              target="_about"
+            >
+              Chat App
+            </a>
+          </p>
+          <p className="text-2">
+            Chat App is a Full Stack Chatting App. Uses React.js, Socket.io for
+            real time communication, Chakra.UI for styling and stores user
+            details in encrypted format in Mongo DB Database.{" "}
+          </p>
+          <p className="text-3">
+            Technologies: React, Chakra UI, Mongo Db, Socket.io, Node JS,
+            Express JS, Render
           </p>
         </div>
         {/* *********************THIRD ***********/}
