@@ -13,8 +13,8 @@ export default function Test() {
   const { sendEmail, handleSubmit, userMessage } = useContext(Context);
   return (
     <div className="antialised   ">
-      <div className="flex w-full  justify-center items-center ">
-        <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6 bg-gradient-to-r from-graytwnd  w-full sm:p-12 max-w-4xl p-8 rounded-2xl shadow-lg text-white md:mt-48">
+      <div className="flex w-full   justify-center items-center  ">
+        <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6   w-full sm:p-12 max-w-4xl p-8 rounded-2xl shadow-lg text-white  bg-graytwnd md:mt-28">
           <div className="flex flex-col  space-y-8 justify-between">
             <div>
               <h1 className="font-bol md:text-4xl tracking-wide mb-8">
@@ -85,7 +85,7 @@ export default function Test() {
               </div>
               <div>
                 <label
-                  className="md:text-lg md:hover:font-bold"
+                  className="md:text-lg md:hover:font-bold bg-graytwnd"
                   for="email"
                   aria-label="name"
                 >
