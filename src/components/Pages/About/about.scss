@@ -5,144 +5,148 @@
 @media screen and (min-width: 992px) {
   .About {
     background-color: $dark;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../../images/bg.png") center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../../images/bg.png") center / cover no-repeat;
     background-attachment: fixed;
+    font-family: $font;
     width: 100%;
     height: 100%;
     @include root;
-    @include useFlex(column, flex-end, center);
-    display: flex;
-    font-family: "'Lato', sans-serif";
   }
   // InfoText Section
   .Info {
-    @include size(100%, 20%);
     margin: 15rem 0 8rem;
     background-color: $gray;
-    opacity: 0.4;
+    opacity: 0.3;
     padding: 2rem;
-    border-radius: 5rem
+    border-radius: 5rem;
+    width: 100%;
   }
   .about_text {
     @include font(1.4rem, $gold, 0.1rem);
-    text-shadow: 0 0 6px $gray;
-    text-transform:none;
+    text-transform: none;
     margin: 1rem 4rem;
-    padding:0;
-     }
-  // Project Section
-  .projects_wrapper {
-    @include useFlex(row, center, center);
-    width: 85%;
-    height: 40%;
-    @include root;
-    .projects {
-      @include root;
-      .description :nth-of-type(1) {
-        @include font(1.9rem, $white, 0.8rem);
-      }
-      .description :nth-of-type(2) {
-        @include font(1.3rem, $gray, 0.3rem);
-      }
-      .description :nth-of-type(3) {
-        @include font(0.9rem, $gold, 0.3rem);
-      }
-      .logo-img {
-        @include size(4.5rem, 2.5rem);
-        opacity: 0.3;
-        border-radius: 0.5rem;
-      }
-      .item-img {
-        margin: 5rem;
-        @include size(20rem, 27rem);
-        border: 2px solid $gold;
-        border-radius: 2rem;
-        box-shadow: 0 0 5px $gold, 0 0 10px $gold, 0 0 20px $gold,
-          0 0 40px $gold;
-        background: linear-gradient(rgba(0, 0, 0, 0.5)),
-          url(../../../images/bg.png);
-      }
-      .img-1:hover {
-        background: url(../../../images/chat.jpg) center / cover no-repeat;
-      }
-      .img-2:hover {
-        background: url(../../../images/devshed.jpg) center / cover no-repeat;
-      }
-      .img-3:hover {
-        background: url(../../../images/port.jpg ) top / cover no-repeat;
-      }
-    }
+    padding: 0;
   }
-  .description {
-    text-align: center;
+  // ********** Project Section ********
+  .Projects {
+    @include root;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  //  Image Section
+  .img-container {
+    @include useFlex(row, space-around, center);
   }
   .link {
-    @include font(0.9rem, $gold, 0.3rem);
-    text-decoration: none
+    text-decoration: none;
+  }
+  .item-img {
+    @include size(20rem, 27rem);
+    margin-bottom: 2rem;
+    border: 2px solid $gold;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px $gold, 0 0 10px $gold, 0 0 20px $gold, 0 0 40px $gold;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../../images/bg.png);
+  }
+  .img-1:hover {
+    background: url(../../../images/chat.jpg) center / cover no-repeat;
+  }
+  .img-2:hover {
+    background: url(../../../images/devshed.jpg) center / cover no-repeat;
+  }
+  .img-3:hover {
+    background: url(../../../images/port.jpg) top / cover no-repeat;
+  }
+  // Logo Section
+  .logo-container {
+    @include useFlex(row, space-around, center);
+  }
+  .logo-img {
+    @include size(4.5rem, 2.5rem);
+    opacity: 0.3;
+    border-radius: 0.5rem;
+  }
+  // Description Section
+  .description_container {
+    @include useFlex(row, space-around, center);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    .text-1 {
+      @include font(1.9rem, $white, 0.8rem);
+      margin-bottom: 2rem;
+    }
+    .text-2 {
+      @include font(1.3rem, $gray, 0.3rem);
+      margin-bottom: 2rem;
+      padding-right: 2rem;
+    }
+    .text-3 {
+      @include font(0.9rem, $gold, 0.3rem);
+    }
+    .text-2:hover {
+      color: $white;
+    }
+  }
+  // ********** Skills Section ********
+  .Skills {
+    @include size(100%, 100%);
+    text-transform: uppercase;
+    @include font(1.5rem, $gray, 0.3rem);
+  }
+  .skills-head {
+    @include font(3rem, $gray, 2rem);
+    text-align: center;
+    margin: 5rem;
+    box-shadow: 2px 2px 30px $gold;
+    border-radius: 5rem;
+    background: linear-gradient(120deg, $gray, $yellow, $gold, $yellow, $gray);
+  }
+  .skills-head:hover {
+    transform: rotate(180deg);
+  }
+  .skill {
+    @include useFlex(row, center, center);
+    width: 75%;
+    margin: 0 auto;
+  }
+  .skill-box {
+    text-align: center;
+    width: 25%;
+    margin: 2rem 0;
+  }
+  .skill-box p {
+    text-align: center;
+  }
+  .skill-box i {
+    color: $gray;
+  }
+  .skill-box i:hover {
+    color: $gold;
+  }
+  .skill-box:hover {
+    animation: skills 1s linear infinite;
+    font-weight: bold;
+    color: $gold;
+  }
+  @keyframes skills {
+    0% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(-35%);
+    }
   }
 }
-
-
-/* FOOTER SKILLS*/
-.Skills {
-  @include size(100%, 20em);
-  text-transform: uppercase;
-  @include font(1.5rem, $gray, 0.3rem);
-  margin-top: 10rem;
-}
-.skills-head {
-  @include font(3rem, $gray, 2rem);
-  text-align: center;
-  margin: 5rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  box-shadow: 2px 2px 30px $gold;
-  border-radius: 5rem;
-  background: linear-gradient(120deg, $gray, $yellow, $gold, $yellow, $gray);
-}
-.skills-head:hover {
-  transform: rotate(180deg);
-}
-.skill {
-  @include useFlex(row, center, center);
-  width: 75%;
-  margin: 0 auto;
-}
-.skill-box {
-  text-align: center;
-  width: 25%;
-  margin: 2rem 0;
-}
-.skill-box p {
-  text-align: center;
-}
-.skill-box i {
-  color: $gray;
-}
-.skill-box i:hover {
-  color: $gold;
-}
-.skill-box:hover {
-  animation: skills 1s linear infinite;
-  font-weight: bold;
-  color: $gold;
-}
-@keyframes skills {
-  0% {
-    transform: translateY(-10%);
-  }
-  100% {
-    transform: translateY(-35%);
-  }
-}
-
 // ******** Media query for Tablets and Mobiles ***********
 @media only screen and (max-width: 992px) and (min-width: 48px) {
   .About {
     background-color: $dark;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../../images/bg.png") center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../../images/bg.png") center / cover no-repeat;
     background-attachment: fixed;
     @include root;
     @include useFlex(column, flex-end, center);
@@ -160,40 +164,45 @@
     font-style: italic;
   }
   // Project Section
-  .projects_wrapper {
+  .Projects {
     @include useFlex(column, center, center);
     width: 85%;
     height: 40%;
     @include root;
-    .projects {
-      @include root;
-      .description :nth-of-type(1) {
+    // Logo Section
+    .logo-container {
+      display: none;
+    }
+    //  Image Section
+    .img-container {
+      display: none;
+    }
+    .description_container {
+      @include useFlex(column, center, center);
+      text-align: center;
+      margin: 1rem;
+      padding: 1rem;
+      .text-1 {
         @include font(1.2rem, $white, 0.5rem);
+        margin-bottom: 0.5rem;
       }
-      .description :nth-of-type(2) {
+      .text-2 {
         @include font(1rem, $gray, 0.1rem);
+        margin-bottom: 0.5rem;
+        padding-right: 0.5rem;
       }
-      .description :nth-of-type(3) {
+      .text-3 {
         @include font(0.7rem, $gold, 0.3rem);
       }
-      .logo-img {
-        @include size(2rem, 1.5rem);
-        opacity: 0.3;
-        border-radius: 0.5rem;
-      }
-      .item-img {
-        display: none;
+      .text-2:hover {
+        color: $white;
       }
     }
-  }
-  .description {
-    text-align: center;
   }
   /* FOOTER SKILLS*/
   .Skills {
     @include size(70%, 20%);
     text-transform: uppercase;
-
     @include font(1rem, $gray, 0.3rem);
     margin-top: 0.2rem;
   }
@@ -201,8 +210,6 @@
     @include font(1rem, $gray, 0.5rem);
     text-align: center;
     margin: 2rem;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
     box-shadow: 1px 1px 15px $gold;
     border-radius: 3rem;
     background: linear-gradient(120deg, $gray, $yellow, $gold, $yellow, $gray);

@@ -1,25 +1,20 @@
 import React from "react";
 import NavbarDesk from "../../Navbar/NavbarDesk";
 import NavbarMob from "../../Navbar/NavbarMob";
+import ContactBtn from "../../ContactBtn.jsx/ContactBtn";
 import EndText from "../../EndText/EndText";
-import { Link } from "react-router-dom";
+import Intro from "./Intro";
 import "./home.scss";
-import "./animation.scss"; 
 
 
 const Home = () => {
   return (
-    <div className="body">
+    <div className="Home">
       <NavbarDesk />
       <NavbarMob />
-      <p className="homeText_1"> Fidan Maharramova</p>
-      <p className="homeText_2">Full Stack Web Developer</p>
-      <Link className="fixed-contact" to="../Contact">
-        contact{" "}
-      </Link>
-      <div className="endText">
-        <EndText />
-      </div>
+      <Intro />
+       <ContactBtn /> 
+      <EndText /> 
     </div>
   );
 };

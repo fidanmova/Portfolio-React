@@ -6,7 +6,7 @@
 }
 @mixin full {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
 @mixin root {
   margin: 0;

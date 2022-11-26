@@ -2,90 +2,126 @@
 @import "../../../styles/variables";
 // ****** Media query for Desktop *******
 @media screen and (min-width: 992px) {
-  .body {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../../images/bg.png") center / cover no-repeat;
+  .Home {
     background-color: $dark;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../../images/bg.png") center / cover no-repeat;
     background-attachment: fixed;
-    @include full;
+    font-family: $font;
+    width: 100%;
+    height: 100vh;
     @include root;
- font-family: "'Lato', sans-serif";
   }
-  // Header Texts
+  // Intro texts
   .homeText_1,
-  .homeText_2 {
-    @include font(2.4rem, $gray, 0.3rem);
+  .homeText_2,
+  .homeText_3 {
     position: fixed;
     left: 10%;
     font-family: $font;
   }
   .homeText_1 {
-    bottom: 40%;
+    bottom: 44%;
+    @include font(1.5rem, $gray, 0.5rem);
   }
   .homeText_2 {
+    bottom: 36%;
+    @include font(2rem, $gray, 0.8rem);
+  }
+  .homeText_3 {
+    @include font(1.2rem, $gold, 0.5rem);
     bottom: 30%;
   }
-  .homeText_1:hover , .homeText_2:hover{
+  .homeText_1:hover,
+  .homeText_2:hover {
     color: $white;
   }
-  // End Text div
-  .endText {
-    position: fixed;
-    bottom: 0;
+  //////////////////////// Main text Animations
+  // slide-in-elliptic-top-fwd
+  .homeText_1 {
+    animation: slide-in-elliptic-top-fwd 0.7s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
   }
-  // Contact button
-  .fixed-contact {
-    @include font(1rem, $gray, 0.2rem);
-    text-decoration: none;
-    position: fixed;
-    bottom: 12%;
-    left: 0;
-    border: 2px solid $gray;
-    border-radius: 3rem;
-    padding: 0.8rem;
-    animation: vibrate-1 0.3s linear infinite both;
-    margin-top: 4rem;
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
+    }
   }
-  .fixed-contact:hover {
-    box-shadow: 2px 2px 8px $gold;
-    background: linear-gradient(120deg, $yellow, $gold, $yellow, $gray);
+  // roll-in-blurred-left
+  .homeText_2 {
+    animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) 0.8s
+      both;
+  }
+  @keyframes roll-in-blurred-left {
+    0% {
+      transform: translateX(-1000px) rotate(-720deg);
+      filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  // slide-in-fwd-center
+  @mixin slide-in-fwd-center {
+    animation: slide-in-fwd-center 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s
+      both;
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1.5;
+    }
+    100% {
+      transform: translateZ(0) scale(1);
+      opacity: 3;
+    }
+  }
+  .homeText_3 {
+    @include slide-in-fwd-center;
   }
 }
 // ********** Media query for Tablets and Mobiles ***********
 @media only screen and (max-width: 992px) and (min-width: 48px) {
-  .body {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  .Home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("../../../images/bg.png") center / cover no-repeat;
     background-color: $dark;
     background-attachment: fixed;
-    @include full;
+    width: 100%;
+    height: 100vh;
     @include root;
   }
   .homeText_1,
-  .homeText_2 {
-    @include font(1.2rem, $white, 0.1rem);
+  .homeText_2,
+  .homeText_3 {
+    @include font(1rem, $white, 0.1rem);
     position: fixed;
     left: 10%;
     font-family: $font;
   }
-  .homeText_1 {  .body {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../../images/bg.png") center / cover no-repeat;
-    background-color: $dark;
-    background-attachment: fixed;
-    @include full;
-    @include root;
-  }
-    bottom: 40%;
+  .homeText_1 {
+    bottom: 50%;
   }
   .homeText_2 {
-    bottom: 30%;
+    bottom: 45%;
   }
-  // End Text div
-  .endText {
-    display: none;
-  }
-  .fixed-contact {
-    display: none;
+  .homeText_3 {
+    bottom: 40%;
   }
 }

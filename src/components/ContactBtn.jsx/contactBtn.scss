@@ -1,0 +1,55 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+
+// ****** Media query for Desktop *******
+@media screen and (min-width:992px){
+  // Contact button
+  .fixed-contact {
+    @include font(1rem, $gray, 0.2rem);
+    text-decoration: none;
+    position: fixed;
+    bottom: 12%;
+    left: 0;
+    border: 2px solid $gray;
+    border-radius: 3rem;
+    padding: 0.8rem;
+    animation: vibrate-1 0.3s linear infinite both;
+    margin-top: 4rem;
+  }
+  .fixed-contact:hover {
+    box-shadow: 2px 2px 8px $gold;
+    background: linear-gradient(120deg, $yellow, $gold, $yellow, $gray);
+  }
+
+    // Fixed Contact animation
+    @keyframes vibrate-1 {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        transform: translate(-2px, -2px);
+      }
+      60% {
+        transform: translate(2px, 2px);
+      }
+      80% {
+        transform: translate(2px, -2px);
+      }
+      100% {
+        transform: translate(0);
+      }
+    }
+    }
+
+    // ********** Media query for Tablets and Mobiles ***********
+@media only screen and (max-width: 992px) and (min-width: 48px) {
+   
+    .fixed-contact {
+      display: none;
+    }
+  }
