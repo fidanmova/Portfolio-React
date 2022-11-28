@@ -25,7 +25,7 @@ export default function InfoText() {
           staying up-to-date on trends in the industry.
         </p>
         <p className="about_text">
-          I am excitedly looking forward to building easy-to-use, user-friendly
+          I am looking forward to build easy-to-use, user-friendly
           websites, and applications.
         </p>
         <p className="about_text">
@@ -33,7 +33,7 @@ export default function InfoText() {
           values.
         </p>
         <p className="about_text">
-          Seeking a position to apply my experience and passion in web
+          Seeking for a position to apply my experience and passion in web
           development for finding creative solutions.
         </p>
       </div>
