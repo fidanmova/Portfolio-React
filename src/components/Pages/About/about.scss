@@ -21,7 +21,6 @@
     padding: 2rem;
     border-radius: 5rem;
     width: 100%;
- 
   }
   .about_text {
     @include font(1.4rem, $gold, 0.1rem);
@@ -41,9 +40,9 @@
   .img-container {
     @include useFlex(row, space-around, center);
   }
-  .link {
-    text-decoration: none;
-  }
+  // .link {
+  //   text-decoration: none;
+  // }
   .item-img {
     @include size(20rem, 27rem);
     margin-bottom: 2rem;
@@ -79,6 +78,10 @@
     .text-1 {
       @include font(1.9rem, $white, 0.8rem);
       margin-bottom: 2rem;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: $gold;
+    
     }
     .text-2 {
       @include font(1.3rem, $gray, 0.3rem);
@@ -174,10 +177,31 @@
     .logo-container {
       display: none;
     }
-    //  Image Section
+    // Image Section
     .img-container {
-      display: none;
+      @include useFlex(column, space-around, center);
+      margin-top: 2rem;
     }
+    .mob-img {
+      @include size(15rem, 18rem);
+
+      margin-bottom: 2rem;
+      border: 2px solid $gold;
+      border-radius: 2rem;
+      box-shadow: 0 0 5px $gold, 0 0 10px $gold, 0 0 20px $gold, 0 0 40px $gold;
+      background: linear-gradient(rgba(0, 0, 0, 0.5)),
+        url(../../../images/bg.png);
+    }
+    .img-1:hover {
+      background: url(../../../images/devshed.jpg) center / cover no-repeat;
+    }
+    .img-2:hover {
+      background: url(../../../images/chat.jpg) center / cover no-repeat;
+    }
+    .img-3:hover {
+      background: url(../../../images/port.jpg) top / cover no-repeat;
+    }
+
     .description_container {
       @include useFlex(column, center, center);
       text-align: center;
@@ -186,6 +210,9 @@
       .text-1 {
         @include font(1.2rem, $white, 0.5rem);
         margin-bottom: 0.5rem;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: $gold;
       }
       .text-2 {
         @include font(1rem, $gray, 0.1rem);

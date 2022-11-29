@@ -98,7 +98,7 @@
       margin: 1rem;
 
       .btn {
-        @include font(0.7rem, $gold, 0.2rem);
+        @include font(0.9rem, $gold, 0.2rem);
         font-family: $font;
         text-decoration: none;
       }

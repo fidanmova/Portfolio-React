@@ -36,7 +36,6 @@ export function ContextProvider(props) {
   // Send Email use Email
   const sendEmail = (e) => {
     e.preventDefault();
-    // setFormErrors(validate(userMessage));
     emailjs
       .sendForm(
         "service_x6cefae",

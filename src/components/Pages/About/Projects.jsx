@@ -65,6 +65,9 @@ export default function Projects() {
             Technologies: Next.js, Tailwind CSS, Daisy ui, Mongo Db, Node js,
             Vercel, nodemailer, mapbox, cloudinary
           </p>
+          <section className="img-container">
+        <div className="mob-img img-1"> </div>
+      </section>
         </div>
 
         {/* *********************SECOND ***********/}
@@ -87,6 +90,9 @@ export default function Projects() {
             Technologies: React, Chakra UI, Mongo Db, Socket.io, Node JS,
             Express JS, Render
           </p>
+          <section className="img-container">
+        <div className="mob-img img-2"> </div>
+      </section>
         </div>
         {/* *********************THIRD ***********/}
         <div>
@@ -109,6 +115,9 @@ export default function Projects() {
           <p className="text-3">
             Technologies: React, SCSS, Tailwind CSS, HTML5, Email js
           </p>
+          <section className="img-container">
+        <div className="mob-img img-3"> </div>
+      </section>
         </div>
       </section>
     </div>
