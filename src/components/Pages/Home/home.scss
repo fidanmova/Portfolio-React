@@ -36,6 +36,7 @@
   .homeText_2:hover {
     color: $white;
   }
+  
   //////////////////////// Main text Animations
   // slide-in-elliptic-top-fwd
   .homeText_1 {
@@ -70,6 +71,7 @@
       filter: blur(0);
       opacity: 1;
     }
+
   }
   // slide-in-fwd-center
   @mixin slide-in-fwd-center {
