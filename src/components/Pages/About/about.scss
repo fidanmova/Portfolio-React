@@ -149,7 +149,7 @@
 @media only screen and (max-width: 992px) and (min-width: 48px) {
   .About {
     background-color: $dark;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url("../../../images/bg.png") center / cover no-repeat;
     background-attachment: fixed;
     @include root;
@@ -184,13 +184,11 @@
     }
     .mob-img {
       @include size(15rem, 18rem);
-
       margin-bottom: 2rem;
       border: 2px solid $gold;
       border-radius: 2rem;
       box-shadow: 0 0 2px $gold, 0 0 5px $gold, 0 0 10px $gold, 0 0 30px $gold;
-      // background: linear-gradient(rgba(0, 0, 0, 0.5)),
-      //   url(../../../images/bg.png);
+
     }
     .img-1:hover {
       background: url(../../../images/devshed.jpg) center / cover no-repeat;
