@@ -40,9 +40,6 @@
   .img-container {
     @include useFlex(row, space-around, center);
   }
-  // .link {
-  //   text-decoration: none;
-  // }
   .item-img {
     @include size(20rem, 27rem);
     margin-bottom: 2rem;
@@ -81,6 +78,7 @@
       text-decoration: underline;
       text-decoration-thickness: 3px;
       text-decoration-color: $gold;
+      text-underline-offset: 8px;
     
     }
     .text-2 {
@@ -210,7 +208,9 @@
         margin-bottom: 0.5rem;
         text-decoration: underline;
         text-decoration-thickness: 3px;
+        text-underline-offset: 8px;
         text-decoration-color: $gold;
+     
       }
       .text-2 {
         @include font(1rem, $gray, 0.1rem);
