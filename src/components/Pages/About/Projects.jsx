@@ -102,12 +102,10 @@ export default function Projects() {
               href="https://fidanportfolio.vercel.app/"
               target="_about"
             >
-              {" "}
-              Portfolio{" "}
+              Portfolio
             </a>
           </p>
           <p className="text-2">
-            {" "}
             My Portfolio is a frontend project. The Project has been built on
             front-end JavaScript library React. It uses Sass and Tailwind CSS
             for styling and Email js in order to be able to receive the emails
