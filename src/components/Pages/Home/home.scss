@@ -4,7 +4,7 @@
 @media screen and (min-width: 992px) {
   .Home {
     background-color: $dark;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../../../images/bg.png") center / cover no-repeat;
     background-attachment: fixed;
     font-family: $font;
@@ -99,7 +99,7 @@
 // ********** Media query for Tablets and Mobiles ***********
 @media only screen and (max-width: 992px) and (min-width: 48px) {
   .Home {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../../../images/bg.png") center / cover no-repeat;
     background-color: $dark;
     background-attachment: fixed;

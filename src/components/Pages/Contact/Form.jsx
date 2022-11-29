@@ -16,7 +16,7 @@ export default function Test() {
       <div className="flex w-full min-h-min justify-center items-center  ">
         <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6   w-full sm:p-8 max-w-4xl p-8 rounded-2xl shadow-lg text-white  bg-graytwnd/10 mt-12 ">
           <div className="flex flex-col  space-y-8 justify-between">
-            <div>
+            <div className="touch">
               <h1 className="font-bol md:text-5xl text-5xl  text-center tracking-wide mb-8 capitalize">
                 {" "}
                 Get in Touch
