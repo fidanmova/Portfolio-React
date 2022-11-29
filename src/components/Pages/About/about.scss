@@ -188,9 +188,9 @@
       margin-bottom: 2rem;
       border: 2px solid $gold;
       border-radius: 2rem;
-      box-shadow: 0 0 5px $gold, 0 0 10px $gold, 0 0 20px $gold, 0 0 40px $gold;
-      background: linear-gradient(rgba(0, 0, 0, 0.5)),
-        url(../../../images/bg.png);
+      box-shadow: 0 0 2px $gold, 0 0 5px $gold, 0 0 10px $gold, 0 0 30px $gold;
+      // background: linear-gradient(rgba(0, 0, 0, 0.5)),
+      //   url(../../../images/bg.png);
     }
     .img-1:hover {
       background: url(../../../images/devshed.jpg) center / cover no-repeat;
