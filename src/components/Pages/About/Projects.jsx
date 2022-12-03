@@ -36,7 +36,7 @@ export default function Projects() {
         <div>
           <a
             className="link"
-            href="https://fidanportfolio.vercel.app/"
+            href="hhttps://portfolio-tailwind-fidan.vercel.app/"
             target="_about"
           >
             <img src={Logo} alt="" className="logo-img" />{" "}
@@ -99,7 +99,7 @@ export default function Projects() {
           <p className="text-1">
             <a
               className="link"
-              href="https://fidanportfolio.vercel.app/"
+              href="https://portfolio-tailwind-fidan.vercel.app/"
               target="_about"
             >
               Portfolio
@@ -107,11 +107,11 @@ export default function Projects() {
           </p>
           <p className="text-2">
             My Portfolio is a frontend project. The Project has been built on
-            front-end JavaScript library React. It uses Sass and Tailwind CSS
-            for styling and Email js in order to be able to receive the emails
+            front-end JavaScript library React. It uses Tailwind CSS
+            for styling and Getform io in order to be able to receive the emails
           </p>
           <p className="text-3">
-            Technologies: React, SCSS, Tailwind CSS, HTML5, Email js
+            Technologies: React, Tailwind CSS, HTML5, Getform io
           </p>
           <section className="img-container">
         <div className="mob-img img-3"> </div>
