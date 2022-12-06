@@ -36,7 +36,7 @@ export default function Projects() {
         <div>
           <a
             className="link"
-            href="hhttps://portfolio-tailwind-fidan.vercel.app/"
+            href="https://portfoliofidan.vercel.app/"
             target="_about"
           >
             <img src={Logo} alt="" className="logo-img" />{" "}
@@ -99,7 +99,7 @@ export default function Projects() {
           <p className="text-1">
             <a
               className="link"
-              href="https://portfolio-tailwind-fidan.vercel.app/"
+              href="https://portfoliofidan.vercel.app/"
               target="_about"
             >
               Portfolio
