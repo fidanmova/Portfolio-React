@@ -14,9 +14,9 @@ export default function About() {
     <div className="About">
       <NavbarDesk />
       <NavbarMob/>
-      <InfoText/>
       <Projects/>
       <Skills/>
+      <InfoText/>
       <ContactBtn/>
     </div>
   );

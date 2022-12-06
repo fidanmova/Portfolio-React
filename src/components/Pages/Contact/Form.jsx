@@ -13,7 +13,7 @@ export default function Test() {
   const { sendEmail, handleSubmit, userMessage } = useContext(Context);
   return (
     <div className="antialised   ">
-      <div className="flex w-full min-h-min justify-center items-center  ">
+      <div className="flex w-full min-h-min justify-center items-center my-10 ">
         <div className="justify-between  flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-6   w-full sm:p-8 max-w-4xl p-8 rounded-2xl shadow-lg text-white  bg-graytwnd/10 mt-12 ">
           <div className="flex flex-col  space-y-8 justify-between">
             <div className="touch">
