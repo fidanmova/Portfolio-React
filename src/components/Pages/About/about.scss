@@ -24,7 +24,7 @@
   }
 
   .about_text {
-    @include font(1.4rem, $white, 0.1rem);
+    @include font(1.4rem, rgb(134, 131, 131), 0.1rem);
     text-transform: none;
     margin: 1rem 4rem;
     padding: 0;
@@ -51,13 +51,13 @@
     background: linear-gradient(rgba(0, 0, 0, 0.8)), url(../../../images/bg.png);
   }
   .img-1:hover {
-    background: url(../../../images/devshed.jpg) center / cover no-repeat;
+    background: url(../../../images/port.jpg) center / cover no-repeat;
   }
   .img-2:hover {
-    background: url(../../../images/chat.jpg) center / cover no-repeat;
+    background: url(../../../images/devshed.jpg) center / cover no-repeat;
   }
   .img-3:hover {
-    background: url(../../../images/port.jpg) top / cover no-repeat;
+    background: url(../../../images/joke.jpg) top / cover no-repeat;
   }
   // Logo Section
   .logo-container {
@@ -191,14 +191,15 @@
       box-shadow: 0 0 2px $gold, 0 0 5px $gold, 0 0 10px $gold, 0 0 30px $gold;
 
     }
+
+    .img-3:hover {
+      background: url(../../../images/port.jpg) center / cover no-repeat;
+    }
     .img-1:hover {
       background: url(../../../images/devshed.jpg) center / cover no-repeat;
     }
     .img-2:hover {
-      background: url(../../../images/chat.jpg) center / cover no-repeat;
-    }
-    .img-3:hover {
-      background: url(../../../images/port.jpg) top / cover no-repeat;
+      background: url(../../../images/joke.jpg) top / cover no-repeat;
     }
 
     .description_container {

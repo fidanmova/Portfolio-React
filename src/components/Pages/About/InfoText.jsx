@@ -12,8 +12,8 @@ export default function InfoText() {
     <>
       <div data-aos="flip-left" className="Info ">
         <div className="trans">
-          <div class="box-decoration-slice bg-gradient-to-r from-black   to-goldtwnd text-white rounded-3xl px-4 ...">
-          <p className="about_text">
+          <div class="box-decoration-slice  rounded-3xl px-4 ...">
+          <p className="about_text ">
             I am a Full Stack Web Developer who newly-graduated a 1 year of
             intensive study in Full Stack web development of Digital Career
             Institute.
